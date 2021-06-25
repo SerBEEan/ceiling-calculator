@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dmitrakov test</title>
+</head>
+<body>
+    <h1 class="title">Расчет стоимости натяжных потолков</h1>
+
+    <section class="parameters">
+        <div class="parameter parameter_m">
+            <div class="parameter__title">1. Материал</div>
+            <div class="parameter__content parameter__content_justify-sb">
+                <div class="radio">
+                    <div class="radio__title">Тип фактуры</div>
+                    <div class="radio__content">
+                        <div class="radio__item radio__item_selected" role="type" data-value="Матовые">Матовые</div>
+                        <div class="radio__item" role="type" data-value="Глянцевые">Глянцевые</div>
+                        <div class="radio__item" role="type" data-value="Сатиновые">Сатиновые</div>
+                        <div class="radio__item" role="type" data-value="Тканевые">Тканевые</div>
+                    </div>
+                </div>
+                <div class="radio" id="cloths">
+                    <div class="radio__title">Производитель</div>
+                    <div class="radio__content" id="materials">
+                        <div class="radio__item" data-value="Classic">Classic</div>
+                        <div class="radio__item" data-value="Pongs">Pongs</div>
+                        <div class="radio__item" data-value="Evolution">Evolution</div>
+                        <div class="radio__item" data-value="Teqtum">Teqtum</div>
+                        <div class="radio__item" data-value="Premium">Premium</div>
+                        <div class="radio__item" data-value="Lumfer">Lumfer</div>
+                        <div class="radio__item" data-value="Cold Stretch">Cold Stretch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parameter parameter_m">
+            <div class="parameter__title">2. Помещение</div>
+            <div class="parameter__content">
+                <div class="counter counter_m">
+                    <div class="counter__title">
+                        Площадь, м<span class="sub-param__title_index-up">2</span>
+                    </div>
+                    <div class="counter__actions">
+                        <button class="btn">-</button>
+                        <div class="counter__value" data-title="Площадь">0</div>
+                        <button class="btn">+</button>
+                    </div>
+                </div>
+                <div class="counter counter_m">
+                    <div class="counter__title">
+                        Углы, шт
+                    </div>
+                    <div class="counter__actions">
+                        <button class="btn">-</button>
+                        <div class="counter__value" data-title="Углы">4</div>
+                        <button class="btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parameter parameter_m">
+            <div class="parameter__title">3. Освещение</div>
+            <div class="parameter__content">
+                <div class="counter counter_m">
+                    <div class="counter__title">
+                        Светильники, шт
+                    </div>
+                    <div class="counter__actions">
+                        <button class="btn">-</button>
+                        <div class="counter__value" data-title="Светильники">0</div>
+                        <button class="btn">+</button>
+                    </div>
+                </div>
+                <div class="counter counter_m">
+                    <div class="counter__title">
+                        Люстры, шт
+                    </div>
+                    <div class="counter__actions">
+                        <button class="btn">-</button>
+                        <div class="counter__value" data-title="Люстры">0</div>
+                        <button class="btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info info_m">
+        <p class="info__text"><span class="info__text_color-red">Если введённые вами параметры верны</span>, то это окончательная стоимость полотен с установкой!</p>
+        <p class="info__text">Фактуру, цвет, аксессуары можно выбрать по образцам у замерщика.</p>
+    </section>
+
+    <section class="result result_m">
+        <div class="result__item">
+            <div class="result__title">Итоговая сумма:
+                <span class="result__price"><span class="result__value">0</span> Р</span>
+            </div>
+        </div>
+        <div class="result__item">
+            <input class="result__input" type="tel" placeholder="Ваш телефон" />
+            <button class="result__button" id="button-buy">Оформить заказ</button>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
